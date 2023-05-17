@@ -1,0 +1,48 @@
+// import { Reducer } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import {createStore} from "redux";
+// import {AnyAction} from "redux";
+// import { isDoStatement } from "typescript";
+
+// interface Action {
+//     Type: string,
+//     Payload: number
+// }
+
+// interface DefaultState {
+//     Cash: number
+// }
+
+// const defaultState: DefaultState = {
+//     Cash: 0
+// }
+
+// const reducer = (state: DefaultState = defaultState, action: AnyAction): DefaultState => {
+//     switch (action.Type) {
+
+//         case "ADD_CASH":
+//             return {...state, Cash: state.Cash + action.Payload}
+
+//         case "GET_CASH":
+//             return {...state, Cash: state.Cash - action.Payload}
+
+//         default:
+//             return state;
+//     }
+// }
+
+// const store = createStore(reducer);
+
+
+
+// const dispatch = useDispatch();
+
+// const cash = useSelector(state => state.Cash)
+
+// const addCash = () => {
+//     dispatch({Type: "ADD_CASH", Payload: "5"})
+// }
+
+// const getCash = () => {
+//     dispatch({Type: "GET_CASH", Payload: "5"})
+// }
